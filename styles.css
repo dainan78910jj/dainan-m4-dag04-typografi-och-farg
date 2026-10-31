@@ -123,7 +123,11 @@ a:hover {
   color: #5e0a0a;
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 3px solid #1a73e8;
   outline-offset: 2px;
 }
