@@ -5,9 +5,12 @@
   box-sizing: border-box;
 }
 
+/* `rem` is a relative unit that allows for proportional scaling across the entire document. */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #222222;
   background-color: #fffaf3;
 }
@@ -16,6 +19,25 @@ header {
   background-color: #5b3a29;
   color: #ffffff;
   padding: 16px 24px;
+}
+
+h1,
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+h1:not(header h1),
+h2:not(header h2),
+h3:not(header h3) {
+  color: #3b2418;
 }
 
 header h1 {
@@ -80,3 +102,40 @@ footer a {
 address {
   font-style: normal;
 }
+
+a {
+  color: #8c1010;
+}
+
+.pris {
+  color: #8c1010;
+}
+
+#hero {
+  background-color: #f3e3cf;
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+a:hover {
+  color: #5e0a0a;
+}
+
+a:focus-visible {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+.knapp:hover {
+  background-color: #6f0c0c;
+}
+
+/* 
+Check the contrast. The requirement is at least 4.5:1 for regular text.
+
+1, bodytext(#222222) against the background(#fffaf3) is 15.31:1
+2, whitetext(#ffffff) against the redbutton(#8c1010) is 9.55:1 
+3, the link color(#ffffff) against the background(#5b3a29) is 10.08:1
+
+*/
