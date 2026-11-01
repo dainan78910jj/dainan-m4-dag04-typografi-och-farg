@@ -144,3 +144,21 @@ Check the contrast. The requirement is at least 4.5:1 for regular text.
 3, the link color(#ffffff) against the background(#5b3a29) is 10.08:1
 
 */
+
+form label {
+  font-weight: bold;
+}
+
+.falt input,
+.falt select,
+.falt textarea {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #8a7a6a;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.falt {
+  margin-bottom: 16px;
+}
